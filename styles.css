@@ -7,21 +7,31 @@ body {
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    
+    background-color: aliceblue;
+    width: 100%;
+    padding-top: 10px;
+    margin: -8px 0 0 -8px;
+}
+
+main {
+    text-align: center;
+    padding-top: 50px;
 }
 
 header img {
-    width: 300px;
-    height: 60px;
+    height: 36px;
+    align-self: center;
+    margin-left: 30px;
 }
 
 nav {
-    width: 600px;
+    padding-right: 60px;
     height: 60px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -34,7 +44,7 @@ nav ul {
 
 nav li {
     font-size: 17px;
-    margin: 0 62px;
+    margin: 0 40px;
 }
 
 a {
@@ -43,32 +53,29 @@ a {
 }
 
 main, footer {
-    margin: 0 200px;
-}
-
-main {
-    text-align: center;
+    margin: 0 240px;
 }
 
 video {
     border: 1px solid blue;
-    width: 500px;
-    height: 300px;
-    margin: 50px;
+    width: 800px;
+    height: 400px;
+    margin-top: -40px;
 }
 
-#options {
+#pricing {
     /* border: 1px solid peru; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 40px;
 }
 
-section#options section {
+section#pricing section {
     width: 300px;
     border: 1px solid black;
 }
 
-#options input {
+#pricing input {
     background-color: rgb(246, 189, 84);
     border: none;
     font-size: 16px;
@@ -82,11 +89,11 @@ h4 {
     margin: 0;
 }
 
-#middle {
+#features {
     margin: 100px 0;
 }
 
-#middle img {
+#features img {
     width: 150px;
     height: 100px;
 }
@@ -104,9 +111,54 @@ div {
 }
 
 div p {
+    margin-top: -16px;
     padding-bottom: 20px;
 }
 
-/* section {
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input#email {
     border: 1px solid black;
-} */
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 5px;
+    width: 300px;
+}
+
+input#submit {
+    background-color: rgb(246, 189, 84);
+    border-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 5px 16px;
+}
+
+footer {
+    background-color: rgb(221, 219, 219);
+    margin-top: 50px;
+    margin-bottom: -50px;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+footer li {
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px;
+}
+
+footer > p {
+    margin-top: -10px;
+    text-align: right;
+}
